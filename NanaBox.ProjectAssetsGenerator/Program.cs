@@ -8,6 +8,8 @@ namespace NanaBox.ProjectAssetsGenerator
     {
         private static string RepositoryRoot = GitRepository.GetRootPath();
 
+        public static string RepositoryRoot1 { get => RepositoryRoot; set => RepositoryRoot = value; }
+
         static void Main(string[] args)
         {
             {
