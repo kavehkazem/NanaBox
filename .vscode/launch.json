@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "attach",
+            "name": "Attach to ExtendScript Engine"
+        },
+        {
             "type": "cmake",
             "request": "launch",
             "name": "CMake: Configure project",
@@ -12,7 +24,45 @@
             "clean": false,
             "configureAll": false
         },
-
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Launch Apex Replay Debugger",
+            "type": "apex-replay",
+            "request": "launch",
+            "logFile": "${command:AskForLogFileName}",
+            "stopOnEntry": true,
+            "trace": true
+        },
+        {
+            "name": "Launch Apex Debugger",
+            "type": "apex",
+            "request": "launch",
+            "userIdFilter": [],
+            "requestTypeFilter": [],
+            "entryPointFilter": "",
+            "salesforceProject": "${workspaceRoot}"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Configure project",
+            "cmakeDebugType": "configure",
+            "clean": false,
+            "configureAll": false
+        },
         {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
